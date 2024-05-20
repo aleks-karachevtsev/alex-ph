@@ -69,14 +69,15 @@ nav {
     z-index: 1;
 }
 
+/* Event categories grid styles */
 .event-categories {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .category {
-    margin: 20px;
     text-align: center;
     color: #fff;
     z-index: 2;
@@ -84,7 +85,7 @@ nav {
 }
 
 .category-thumb {
-    width: 200px;
+    width: 100%;
     height: 200px;
     background-size: cover;
     background-position: center;
@@ -128,5 +129,4 @@ nav {
 .hero.animate {
     background-position: center top;
 }
-
 
