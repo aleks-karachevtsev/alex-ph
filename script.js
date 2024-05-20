@@ -5,4 +5,3 @@ window.addEventListener('scroll', function() {
     backgroundImage.style.opacity = 1 - scrollPosition / 1000; // Adjust as needed
     backgroundImage.style.transform = 'scale(' + (1 - scrollPosition / 2000) + ')'; // Adjust as needed
 });
-
