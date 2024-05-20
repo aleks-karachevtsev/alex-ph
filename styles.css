@@ -1,9 +1,15 @@
-/* Используемые шрифты */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main styles */
 body {
     font-family: 'Raleway', sans-serif;
     color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+    background-color: #000; /* Black background for better readability */
 }
 
 header {
@@ -39,22 +45,24 @@ header nav ul li a:hover {
     color: #ddd;
 }
 
-#home, #contact-page {
+#home {
     position: relative;
     height: 100vh;
-    background: url('images/64147.JPG') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.overlay {
+.image-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .content {
@@ -62,78 +70,7 @@ header nav ul li a:hover {
     z-index: 1;
     padding: 20px;
     text-align: center;
-    color: #f5f5f5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-p, label, input, textarea {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-}
-
-#contact-page .content section {
-    margin: 20px 0;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-#contact-page .content section h2, #contact-page .content section p {
-    font-size: 1.2em; /* Увеличиваем размер шрифта для контактной информации */
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 400px;
-    background: rgba(255, 255, 255, 0.8);
-    color: #000;
-}
-
-form textarea {
-    height: 100px; /* Уменьшаем высоту поля ввода сообщения */
-}
-
-form input[type="submit"] {
-    background-color: #444;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form input[type="submit"]:hover {
-    background-color: #555;
-}
-
-/* Анимации */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes scaleUp {
-    from { transform: scale(1); }
-    to { transform: scale(1.05); }
-}
-
-#home:hover .overlay, #contact-page:hover .overlay {
-    animation: scaleUp 1.5s ease-in-out forwards;
-}
+/* Add more styles for other sections as needed */
 
