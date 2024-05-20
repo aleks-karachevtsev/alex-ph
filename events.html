@@ -6,32 +6,95 @@
     <title>Events</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for event page */
+        #events {
+            position: relative;
+        }
+        .background-image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .background-image {
+            width: 100%;
+            height: auto;
+            opacity: 0.5; /* Adjust opacity as needed */
+        }
+        .content {
+            padding-top: 100px; /* Adjust as needed */
+            position: relative;
+            z-index: 1;
+        }
+        .tiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .tile {
+            background-color: rgba(255, 255, 255, 0.7); /* Adjust background color and opacity */
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease; /* Add smooth transition */
+        }
+        .tile:hover {
+            transform: scale(1.1); /* Add zoom effect on hover */
+        }
+        .tile img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Header content here -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="portraits.html">Portraits</a></li>
+                <li><a href="food.html">Food</a></li>
+                <!-- Add other categories here -->
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="portraits.html">Portraits</a></li>
-            <li><a href="food.html">Food</a></li>
-            <!-- Add other categories -->
-        </ul>
-    </nav>
 
     <section id="events">
-        <h2>Events</h2>
-        <ul>
-            <li><a href="corporate.html">Corporate</a></li>
-            <li><a href="concerts.html">Concerts</a></li>
-            <li><a href="parties.html">Parties</a></li>
-            <!-- Add more event categories -->
-        </ul>
+        <div class="background-image-container">
+            <img src="images/FEST_PR.jpg" alt="Events Background Image" class="background-image">
+        </div>
+        <div class="content">
+            <h1>Events</h1>
+            <div class="tiles">
+                <div class="tile">
+                    <img src="images/CorporatePreview.jpg" alt="Corporate">
+                </div>
+                <div class="tile">
+                    <img src="images/ConcertsPreview.jpg" alt="Concerts">
+                </div>
+                <div class="tile">
+                    <img src="images/PartiesPreview.jpg" alt="Parties">
+                </div>
+                <div class="tile">
+                    <img src="images/FestivalsPreview.jpg" alt="Festivals">
+                </div>
+                <div class="tile">
+                    <img src="images/SportsPreview.jpg" alt="Sports">
+                </div>
+                <div class="tile">
+                    <img src="images/OthersPreview.jpg" alt="Others">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- About, Contact, and Request sections here -->
-
+    <script src="script.js"></script>
 </body>
 </html>
+
