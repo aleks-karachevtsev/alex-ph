@@ -11,11 +11,14 @@ nav {
     padding: 20px 0;
 }
 
-nav ul {
+.nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-link {
@@ -28,6 +31,12 @@ nav ul {
 
 .nav-link:hover {
     color: #ff7b00;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+    }
 }
 
 /* Hero section styles */
@@ -69,4 +78,5 @@ nav ul {
 .contact-info a:hover {
     color: #ff7b00;
 }
+
 
