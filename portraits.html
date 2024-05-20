@@ -5,29 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portraits</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for portrait page */
+        #portrait {
+            background-image: url('images/8998.JPG');
+            background-size: cover;
+            background-position: center;
+            padding: 100px; /* Adjust padding as needed */
+            color: white; /* Adjust text color for better readability */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Add border radius for rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for image */
+            transition: transform 0.3s ease; /* Add smooth transition */
+        }
+        .gallery img:hover {
+            transform: scale(1.05); /* Add zoom effect on hover */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="events.html" class="nav-link">Events</a></li>
-                <li><a href="portraits.html" class="nav-link">Portraits</a></li>
-                <li><a href="food.html" class="nav-link">Food</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="portraits.html">Portraits</a></li>
+                <li><a href="food.html">Food</a></li>
+                <!-- Add other categories here -->
             </ul>
         </nav>
     </header>
 
-    <section id="portraits">
-        <!-- Thumbnails and animations here -->
+    <section id="portrait">
+        <h1>Portraits</h1>
+        <div class="gallery">
+            <!-- Add your portrait images here -->
+            <img src="images/64147.JPG" alt="Portrait 1">
+            <img src="images/3177.jpg" alt="Portrait 2">
+            <!-- Add more images as needed -->
+        </div>
     </section>
 
-    <!-- Remaining sections and scripts here -->
-
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
