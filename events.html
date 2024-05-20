@@ -5,33 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <!-- Header content here -->
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="portraits.html" class="nav-link">Portraits</a></li>
+                <li><a href="food.html" class="nav-link">Food</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="portraits.html">Portraits</a></li>
-            <li><a href="food.html">Food</a></li>
-            <!-- Add other categories -->
-        </ul>
-    </nav>
 
     <section id="events">
-        <h2>Events</h2>
-        <ul>
-            <li><a href="corporate.html">Corporate</a></li>
-            <li><a href="concerts.html">Concerts</a></li>
-            <li><a href="parties.html">Parties</a></li>
-            <!-- Add more event categories -->
-        </ul>
+        <div class="hero">
+            <h1>Events</h1>
+            <div class="event-categories">
+                <div class="category">
+                    <a href="corporate.html">
+                        <div class="category-thumb" style="background-image: url('images/corporate_thumb.jpg');"></div>
+                        <h2>Corporate</h2>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="concerts.html">
+                        <div class="category-thumb" style="background-image: url('images/concerts_thumb.jpg');"></div>
+                        <h2>Concerts</h2>
+                    </a>
+                </div>
+                <div class="category">
+                    <a href="parties.html">
+                        <div class="category-thumb" style="background-image: url('images/parties_thumb.jpg');"></div>
+                        <h2>Parties</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- About, Contact, and Request sections here -->
-
+    <script src="script.js" defer></script>
 </body>
 </html>
+
