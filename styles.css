@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #333; /* Темно-серый фон */
+    color: #fff; /* Белый текст */
 }
 
 header {
-    background-color: #222;
+    background-color: #222; /* Темный цвет для шапки */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -26,7 +26,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #fff; /* Белый цвет для ссылок в навигации */
     text-decoration: none;
     font-weight: bold;
 }
@@ -36,7 +36,7 @@ section {
 }
 
 h2 {
-    color: #222;
+    color: #fff; /* Белый цвет для заголовков */
 }
 
 /* Стили для главного контейнера */
@@ -72,16 +72,21 @@ h2 {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #fff; /* Белая рамка для полей ввода */
+    background-color: rgba(255, 255, 255, 0.1); /* Прозрачный фон */
+    color: #fff; /* Белый текст */
 }
 
 #request input[type="submit"] {
-    background-color: #222;
-    color: #fff;
+    background-color: #fff; /* Белый цвет для кнопки отправки */
+    color: #333; /* Темный текст на кнопке */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
 }
 
 #request input[type="submit"]:hover {
-    background-color: #444;
+    background-color: #ccc; /* Светлый серый при наведении на кнопку */
+    color: #000; /* Темный текст на кнопке при наведении */
 }
+
