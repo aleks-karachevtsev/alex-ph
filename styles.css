@@ -113,3 +113,36 @@ nav {
         background-color: rgba(0, 0, 0, 0.7);
     }
 }
+/* Add this at the end of your existing styles.css file */
+.tiles {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tile {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: filter 0.3s;
+    cursor: pointer;
+}
+
+.tile:hover {
+    filter: brightness(120%);
+}
+
+@media (max-width: 768px) {
+    .tiles {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tile {
+        width: 100%;
+    }
+}
