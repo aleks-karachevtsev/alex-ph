@@ -20,9 +20,9 @@ nav ul {
 
 .nav-link {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Increased font size */
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 25px; /* Increased padding */
     transition: color 0.3s ease;
 }
 
@@ -32,19 +32,21 @@ nav ul {
 
 /* Hero section styles */
 .hero {
-    background-color: #000;
+    background-image: url('images/64144A.JPG'); /* Background image */
+    background-size: cover;
+    background-position: center;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem; /* Increased font size */
     margin-bottom: 20px;
 }
 
 .tagline {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Increased font size */
     margin-bottom: 40px;
     opacity: 0.8;
 }
@@ -55,6 +57,7 @@ nav ul {
     color: #fff;
     text-align: center;
     padding: 20px;
+    margin-top: 20px; /* Added margin */
 }
 
 .contact-info a {
@@ -66,3 +69,4 @@ nav ul {
 .contact-info a:hover {
     color: #ff7b00;
 }
+
