@@ -113,3 +113,48 @@ h2 {
 
 </body>
 </html>
+body {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, section {
+    margin: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    max-height: 1500px;
+    margin-bottom: 20px;
+    flex: 1 1 calc(25% - 10px); /* Four images per row with space between */
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        flex: 1 1 calc(50% - 10px); /* Two images per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        flex: 1 1 100%; /* One image per row on mobile devices */
+    }
+}
