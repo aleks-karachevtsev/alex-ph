@@ -72,4 +72,9 @@ h2 {
     background-color: #ccc;
     color: #000;
 }
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    max-height: 1500px;
+}
 
