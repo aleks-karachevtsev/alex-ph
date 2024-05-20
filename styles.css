@@ -29,67 +29,6 @@
     background-color: #000;
     color: #fff;
     text-align: center;
-}
-
-.main-image {
-    max-width: 100%;
-    height: auto;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.tagline {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-}
-
-/* Navigation styles */
-.nav-link {
-    color: #fff;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #f2f2f2; /* Lighter color on hover */
-}
-
-/* Styles for mobile devices */
-@media screen and (max-width: 768px) {
-    /* Your styles for mobile devices */
-}
-
-/* Scroll animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Applying animation to content */
-.content {
-    animation: fadeIn 1s ease-out;
-}
-
-/* Hero section styles */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
     overflow: hidden;
     position: relative;
 }
