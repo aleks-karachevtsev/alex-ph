@@ -45,5 +45,63 @@
 }
 
 h1 {
-    font-size: 
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
 
+.tagline {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Navigation styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff7b00;
+}
+
+/* Contact information styles */
+.contact-info {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff7b00;
+}
