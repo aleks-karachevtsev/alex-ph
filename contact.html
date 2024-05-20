@@ -6,6 +6,24 @@
     <title>Contact</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for contact page */
+        #contact {
+            background-image: url('images/FEST_PR.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px; /* Adjust padding as needed */
+            color: white; /* Adjust text color for better readability */
+        }
+        .profile-image {
+            float: right;
+            margin-left: 20px;
+            border-radius: 50%; /* Make the image circular */
+            width: 200px; /* Adjust size as needed */
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for image */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,24 +38,16 @@
         </nav>
     </header>
 
-    <section id="contact" class="contact-section">
-        <div class="background-image-container">
-            <img src="images/skazka.JPG" alt="Contact Background Image" class="background-image">
-        </div>
-        <div class="content">
-            <h1>Contact Me</h1>
-            <div class="contact-form">
-                <form action="mailto:alekseyy.karachevcev@gmail.com" method="post" enctype="text/plain">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-        </div>
+    <section id="contact">
+        <h1>Contact</h1>
+        <img src="images/543A0007 копия.jpg" alt="Profile Image" class="profile-image">
+        <p>I'm passionate about photography, capturing moments and emotions through my lens.</p>
+        <p>Feel free to reach out to me through the following channels:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:alekseyy.karachevcev@gmail.com">alekseyy.karachevcev@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+4916096297245">+4916096297245</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/alex_karachevtsev/">@alex_karachevtsev</a></li>
+        </ul>
     </section>
 
     <script src="script.js"></script>
