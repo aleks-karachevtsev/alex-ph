@@ -103,6 +103,10 @@ form input, form textarea {
     color: #000;
 }
 
+form textarea {
+    height: 150px; /* Уменьшаем высоту поля ввода сообщения */
+}
+
 form input[type="submit"] {
     background-color: #444;
     color: #fff;
