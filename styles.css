@@ -78,12 +78,16 @@ p, label, input, textarea {
     font-weight: 400;
 }
 
-section {
+#contact-page .content section {
     margin: 20px 0;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     animation: fadeIn 2s ease-in-out;
+}
+
+#contact-page .content section h2, #contact-page .content section p {
+    font-size: 1.2em; /* Увеличиваем размер шрифта для контактной информации */
 }
 
 form {
@@ -104,7 +108,7 @@ form input, form textarea {
 }
 
 form textarea {
-    height: 150px; /* Уменьшаем высоту поля ввода сообщения */
+    height: 100px; /* Уменьшаем высоту поля ввода сообщения */
 }
 
 form input[type="submit"] {
