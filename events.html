@@ -6,6 +6,32 @@
     <title>Events</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for events page */
+        #events {
+            background-image: url('images/FEST_PR.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px; /* Adjust padding as needed */
+            color: white; /* Adjust text color for better readability */
+        }
+        .tiles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .tile {
+            width: 200px; /* Adjust tile width as needed */
+            height: 200px; /* Adjust tile height as needed */
+            margin: 10px; /* Adjust margin between tiles as needed */
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+            transition: background-color 0.3s; /* Smooth transition effect */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .tile:hover {
+            background-color: rgba(255, 255, 255, 0.8); /* Lighter background color on hover */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,31 +47,14 @@
     </header>
 
     <section id="events">
-        <div class="background-image-container">
-            <img src="images/skazka.JPG" alt="Events Background Image" class="background-image">
-        </div>
-        <div class="content">
-            <h1>Events</h1>
-            <div class="tiles">
-                <div class="tile">
-                    <img src="images/CorporatePreview.jpg" alt="Corporate">
-                </div>
-                <div class="tile">
-                    <img src="images/ConcertsPreview.jpg" alt="Concerts">
-                </div>
-                <div class="tile">
-                    <img src="images/PartiesPreview.jpg" alt="Parties">
-                </div>
-                <div class="tile">
-                    <img src="images/FestivalsPreview.jpg" alt="Festivals">
-                </div>
-                <div class="tile">
-                    <img src="images/SportsPreview.jpg" alt="Sports">
-                </div>
-                <div class="tile">
-                    <img src="images/OthersPreview.jpg" alt="Others">
-                </div>
-            </div>
+        <h1>Events</h1>
+        <div class="tiles">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
         </div>
     </section>
 
